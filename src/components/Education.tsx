@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from "framer-motion";
-import { GraduationCap, Award, ChevronLeft, ChevronRight } from "lucide-react";
 import { useDarkMode } from '../context/DarkModeContext';
 import Image from 'next/image';
 

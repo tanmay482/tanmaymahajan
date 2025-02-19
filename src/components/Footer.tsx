@@ -27,19 +27,19 @@ const Footer = () => {
             {
               href: "https://github.com/azshaikh0786",
               icon: Github,
-              label: "GitHub",
+              
             },
             {
               href: "https://www.linkedin.com/in/azeem-shaikh-688a5224b",
               icon: Linkedin,
-              label: "LinkedIn",
+              
             },
             {
               href: "mailto:azeem.shaikh@mitaoe.ac.in",
               icon: Mail,
-              label: "Email",
+             
             },
-          ].map(({ href, icon: Icon, label }) => (
+          ].map(({ href, icon: Icon }) => (
             <a
               key={href}
               href={href}

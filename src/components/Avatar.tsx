@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Command , FileAudio2, Laptop} from 'lucide-react';
+import { FileAudio2, Laptop} from 'lucide-react';
 import Image from 'next/image';
 
 const Avatar3D = () => {

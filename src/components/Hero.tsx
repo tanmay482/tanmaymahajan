@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, JSX } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Github, Linkedin, Mail, Code, Zap, Terminal, Database, Cloud } from "lucide-react";
+import { Github, Linkedin, Mail, Code, Zap } from "lucide-react";
 import { useDarkMode } from '../context/DarkModeContext';
 import Avatar3D from "./Avatar";
 
@@ -11,33 +11,6 @@ interface Skill {
   text: string;
 }
 
-const FloatingIcon = ({ icon: Icon, delay = 0, x, y, darkMode }: { 
-  icon: any, 
-  delay?: number, 
-  x: string, 
-  y: string, 
-  darkMode: boolean 
-}) => (
-  <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ 
-      opacity: 1,
-      y: ["0%", "-15%", "0%"],
-    }}
-    transition={{
-      opacity: { duration: 0.5 },
-      y: {
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut",
-        delay: delay
-      }
-    }}
-    className={`absolute ${x} ${y} ${darkMode ? 'text-lime-400/30' : 'text-lime-600/30'}`}
-  >
-    <Icon className="w-8 h-8" />
-  </motion.div>
-);
 
 const Hero = () => {
   const { darkMode } = useDarkMode();
@@ -90,7 +63,7 @@ const Hero = () => {
                 darkMode ? 'text-lime-400' : 'text-lime-500'
               }`}
             >
-              Hello, I'm
+              Hello, I&apos;m{' '}
             </motion.h2>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -146,10 +119,10 @@ const Hero = () => {
 
           <div className="flex space-x-4">
             {[ 
-              { href: "https://github.com/azshaikh0786", icon: Github, label: "GitHub" },
-              { href: "https://www.linkedin.com/in/azeem-shaikh-688a5224b", icon: Linkedin, label: "LinkedIn" },
-              { href: "mailto:azeem.shaikh@mitaoe.ac.in", icon: Mail, label: "Email" },
-            ].map(({ href, icon: Icon, label }) => (
+              { href: "https://github.com/azshaikh0786", icon: Github },
+              { href: "https://www.linkedin.com/in/azeem-shaikh-688a5224b", icon: Linkedin },
+              { href: "mailto:azeem.shaikh@mitaoe.ac.in", icon: Mail },
+            ].map(({ href, icon: Icon }) => (
               <motion.a
                 key={href}
                 href={href}
