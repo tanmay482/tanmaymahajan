@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer
       className={`py-10 text-center transition-all duration-300 ${
-        darkMode ? "bg-gray-900 text-gray-200" : "bg-gray-100 text-gray-800"
+        darkMode ? "bg-gray-800 text-gray-200" : "bg-gray-200 text-gray-800"
       }`}
     >
       {/* Name / Branding */}
@@ -50,8 +50,8 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={`p-3 rounded-full border transition-all ${
               darkMode
-                ? "bg-gray-800 border-gray-700 hover:bg-gray-700"
-                : "bg-white border-gray-300 hover:bg-gray-200"
+                ? "bg-gray-700 border-gray-600 hover:bg-gray-600"
+                : "bg-gray-100 border-gray-300 hover:bg-gray-300"
             }`}
           >
             <Icon className={`w-6 h-6 ${darkMode ? "text-lime-400" : "text-gray-900"}`} />

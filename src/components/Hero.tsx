@@ -113,8 +113,7 @@ const Hero = () => {
               darkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            Crafting digital realms where imagination meets innovation. Pioneering technological
-            frontiers with a fusion of creativity and cutting-edge solutions.
+            I’m a problem solver at heart, blending logic with creativity to build efficient and scalable solutions.I thrive on tackling challenges in the ever-evolving tech landscape. With a passion for innovation and a drive for continuous learning.
           </motion.p>
 
           <div className="flex space-x-4">
