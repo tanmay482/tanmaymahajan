@@ -23,7 +23,6 @@ const Education = () => {
       description: "Completed HSC with focus on Physics, Chemistry, and Mathematics.",
       achievements: [
         "Percentage: 70.46 %",
-        
       ]
     },
     {
@@ -35,6 +34,7 @@ const Education = () => {
       ]
     }   
   ];
+
   const certifications = [
     {
       name: "AWS Academy Cloud Foundations",
@@ -97,66 +97,80 @@ const Education = () => {
             }`}></div>
           </motion.div>
 
-          <div className="max-w-4xl mx-auto relative">
-            {/* Vertical Timeline Line */}
-            <div className={`absolute left-1/2 transform -translate-x-1/2 h-full w-1 ${
-              darkMode ? 'bg-lime-400' : 'bg-lime-500'
-            }`}></div>
-
-            {educationData.map((edu, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`relative mb-16 ${index % 2 === 0 ? 'pr-8 ml-auto pl-4' : 'pl-8 mr-auto pr-4'} w-1/2`}
-              >
-                {/* Connection Circle */}
-                <div className={`absolute ${index % 2 === 0 ? 'left-0' : 'right-0'} top-8 transform ${index % 2 === 0 ? '-translate-x-1/2' : 'translate-x-1/2'} w-4 h-4 rounded-full ${
-                  darkMode ? 'bg-lime-400' : 'bg-lime-500'
-                } z-10`}></div>
-
-                {/* Connection Line */}
-                <div className={`absolute ${index % 2 === 0 ? 'left-0' : 'right-0'} top-10 w-8 h-1 ${
-                  darkMode ? 'bg-lime-400' : 'bg-lime-500'
-                }`}></div>
-
-                <div className={`p-6 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 ${
-                  darkMode ? 'bg-gray-800' : 'bg-white'
-                }`}>
-                  <div className="relative">
-                    <h4 className="text-xl font-bold mb-2">{edu.degree}</h4>
-                    <p className={`text-lg mb-2 ${
-                      darkMode ? 'text-lime-400' : 'text-lime-600'
-                    }`}>{edu.institution}</p>
-                    <p className={`text-sm mb-3 ${
-                      darkMode ? 'text-gray-400' : 'text-gray-500'
-                    }`}>{edu.period}</p>
-                    <p className={`mb-4 ${
-                      darkMode ? 'text-gray-300' : 'text-gray-600'
-                    }`}>{edu.description}</p>
-                    
-                    {/* Achievements */}
-                    <div className={`mt-4 p-4 rounded-lg ${
-                      darkMode ? 'bg-gray-900' : 'bg-gray-50'
-                    }`}>
-                      {/* <h5 className="font-semibold mb-2">Key Achievements:</h5> */}
-                      <ul className="space-y-2">
-                        {edu.achievements.map((achievement, achIndex) => (
-                          <li key={achIndex} className="flex items-start">
-                            <span className={`mr-2 ${
-                              darkMode ? 'text-lime-400' : 'text-lime-600'
-                            }`}>•</span>
-                            <span className="text-sm">{achievement}</span>
-                          </li>
+          <div className="relative">
+            <div className="grid gap-8 max-w-3xl mx-auto">
+              {educationData.map((edu, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+                  <div className={`p-6 rounded-lg shadow-lg ${
+                    darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-50'
+                  } transition-all duration-300`}>
+                    <div className="flex items-start gap-4">
+                      <div className={`mt-1 p-2 rounded-lg ${
+                        darkMode ? 'bg-gray-700' : 'bg-gray-100'
+                      }`}>
+                        <svg
+                          className={`w-6 h-6 ${
+                            darkMode ? 'text-lime-400' : 'text-lime-500'
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 14l9-5-9-5-9 5 9 5z"
+                          />
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M12 14v7"
+                          />
+                        </svg>
+                      </div>
+                      <div className="flex-1">
+                        <div className={`text-sm ${
+                          darkMode ? 'text-lime-400' : 'text-lime-600'
+                        } mb-1`}>
+                          {edu.period}
+                        </div>
+                        <h3 className="text-xl font-bold mb-2">{edu.degree}</h3>
+                        <p className={`text-lg mb-2 ${
+                          darkMode ? 'text-gray-300' : 'text-gray-600'
+                        }`}>
+                          {edu.institution}
+                        </p>
+                        {edu.description && (
+                          <p className={`text-sm ${
+                            darkMode ? 'text-gray-400' : 'text-gray-500'
+                          }`}>
+                            {edu.description}
+                          </p>
+                        )}
+                        {edu.achievements.map((achievement, i) => (
+                          <p
+                            key={i}
+                            className={`mt-2 text-sm ${
+                              darkMode ? 'text-gray-400' : 'text-gray-500'
+                            }`}
+                          >
+                            {achievement}
+                          </p>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -183,7 +197,7 @@ const Education = () => {
             }`}></div>
           </motion.div>
 
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden certification-container">
             <div className="certifications-scroll flex w-max">
               {[...certifications, ...certifications].map((cert, index) => (
                 <motion.div
@@ -192,7 +206,7 @@ const Education = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: (index % certifications.length) * 0.1 }}
-                  className={`cert-card flex-none w-72 p-6 rounded-lg ${
+                  className={`cert-card flex-none w-72 p-6 mx-2 rounded-lg ${
                     darkMode ? 'bg-gray-900' : 'bg-white'
                   } shadow-lg hover:scale-105 transition-transform duration-300`}
                 >
@@ -220,15 +234,37 @@ const Education = () => {
       </section>
 
       <style jsx global>{`
+        .certification-container {
+          position: relative;
+          overflow: hidden;
+          padding: 20px 0;
+        }
+
         .certifications-scroll {
           display: flex;
           gap: 1rem;
-          animation: scrollLoop 15s linear infinite;
+          animation: scrollLoop 30s linear infinite;
+          padding: 10px 0;
+        }
+
+        .certification-container:hover .certifications-scroll {
+          animation-play-state: paused;
         }
 
         @keyframes scrollLoop {
           from { transform: translateX(0); }
           to { transform: translateX(-50%); }
+        }
+
+        .cert-card {
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .cert-card:hover {
+          transform: scale(1.05);
+          z-index: 1;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
       `}</style>
     </>
