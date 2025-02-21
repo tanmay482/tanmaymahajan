@@ -22,7 +22,7 @@ const Footer = () => {
 
       {/* Navigation Links */}
       <nav className="my-4">
-        {["Home", "Skills","Education", "Certifications", "Projects"].map((item) => (
+        {["Skills","Education", "Certifications", "Projects"].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
