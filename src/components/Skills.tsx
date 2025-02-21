@@ -25,7 +25,7 @@ const Expertise = () => {
   const { darkMode } = useDarkMode(); // Get dark mode state
 
   return (
-    <section
+    <section id= "skills"
       className={`py-20 transition-colors duration-300 ${
         darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"
       }`}
