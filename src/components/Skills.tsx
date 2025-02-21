@@ -17,7 +17,7 @@ const skills = [
   { name: "GitHub", icon: "/github.png", category: "Tools" },
   { name: "AWS", icon: "/aws.png", category: "Cloud" },
   { name: "Docker", icon: "/docker.png", category: "DevOps" },
-  { name: "GCP", icon: "/gcp.png", category: "Cloud" },
+  { name: "GCP", icon: "/GCP.png", category: "Cloud" },
   { name: "Kubernetes", icon: "/kubernetes.png", category: "Cloud" },
 ];
 
