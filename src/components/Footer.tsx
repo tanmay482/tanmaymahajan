@@ -17,7 +17,7 @@ const Footer = () => {
           darkMode ? "text-gray-200 hover:text-lime-400" : "text-gray-900 hover:text-lime-600"
         }`}
       >
-        Azeem Shaikh
+        Tanmay Mahajan
       </h3>
 
       {/* Navigation Links */}
@@ -38,10 +38,10 @@ const Footer = () => {
       {/* Social Icons */}
       <div className="flex justify-center space-x-4 my-6">
         {[
-          { href: "https://www.linkedin.com/in/azeem-shaikh-688a5224b", icon: Linkedin },
-          { href: "https://github.com/azshaikh0786", icon: Github },
-          { href: "mailto:azeem.shaikh@mitaoe.ac.in", icon: Mail },
-          { href: "tel:+917774809906", icon: Phone },
+          { href: "https://www.linkedin.com/in/tanmay-mahajan-93a60a258/", icon: Linkedin },
+          { href: "https://github.com/tanmay482", icon: Github },
+          { href: "mailto:tanmaymahajan@mitaoe.ac.in", icon: Mail },
+          { href: "tel:+918080728051", icon: Phone },
         ].map(({ href, icon: Icon }) => (
           <a
             key={href}
@@ -61,7 +61,7 @@ const Footer = () => {
 
       {/* Copyright Notice */}
       <p className={`text-sm ${darkMode ? "text-gray-500" : "text-gray-600"}`}>
-        &copy; {new Date().getFullYear()} Azeem Shaikh | All Rights Reserved.
+        &copy; {new Date().getFullYear()} Tanmay Mahajan | All Rights Reserved.
       </p>
     </footer>
   );

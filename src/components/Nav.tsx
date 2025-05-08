@@ -43,7 +43,7 @@ const Navbar = () => {
           ? 'text-gray-200 hover:text-lime-400' 
           : 'text-gray-900 hover:text-lime-600'
       }`}>
-        Azeem Shaikh
+        Tanmay Mahajan
       </div>
       
       {/* Navigation Items */}
