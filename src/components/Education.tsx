@@ -8,29 +8,29 @@ const Education = () => {
 
   const educationData = [
     {
-      degree: "Bachelor of Technology in Computer Science",
+      degree: "B.Tech Mechanical Engineering ",
       institution: "MIT Academy of Engineering",
       period: "2021 - 2025",
       description: "Focused on cloud computing, software engineering, and web development.",
       achievements: [
-        "CGPA: 8.96",
+        "CGPA: 8.63",
       ]
     },
     {
       degree: "Higher Secondary Education (12th Grade)",
-      institution: "JAI Hind Higher Secondary School",
-      period: "2018 - 2020",
+      institution: "Shree Shivaji Vidya Mandir, Aundh Pune",
+      period: "2019 - 2021",
       description: "Completed HSC with focus on Physics, Chemistry, and Mathematics.",
       achievements: [
-        "Percentage: 70.46 %",
+        "Percentage: 77 %",
       ]
     },
     {
       degree: "Secondary School Education (10th Grade)",
-      institution: "Podar International School (CBSE)",
+      institution: "NHS Sanghvi Pune",
       period: "2018 - 2019",
       achievements: [
-        "Percentage : 84.33 %",
+        "Percentage : 78 %",
       ]
     }   
   ];

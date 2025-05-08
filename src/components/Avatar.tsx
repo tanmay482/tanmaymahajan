@@ -20,7 +20,7 @@ const Avatar3D = () => {
         className="z-10 w-[450px] h-[450px] rounded-full overflow-hidden shadow-lg dark:shadow-xl dark:shadow-blue-500/20"
       >
         <Image 
-          src="/image1.png" 
+          src="/image.png" 
           alt="Avatar" 
           width={450}
           height={450}

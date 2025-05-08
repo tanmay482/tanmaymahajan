@@ -18,8 +18,8 @@ const Hero = () => {
   const [activeSkill, setActiveSkill] = useState<number>(0);
 
   const skills: Skill[] = [
-    { icon: <Code className="w-6 h-6" />, text: "Developer" },
-    { icon: <Zap className="w-6 h-6" />, text: "Coder" },
+    { icon: <Code className="w-6 h-6" />, text: "Mechanical Engineer" },
+    { icon: <Zap className="w-6 h-6" />, text: "Designer" },
     { icon: <Zap className="w-6 h-6" />, text: "Competitive Programmer" },
   ];
 
@@ -73,7 +73,7 @@ const Hero = () => {
                 darkMode ? 'text-white' : 'text-gray-900'
               }`}
             >
-              Azeem Shaikh
+              Tanmay Mahajan
             </motion.h1>
           </div>
 
@@ -118,9 +118,9 @@ const Hero = () => {
 
           <div className="flex space-x-4">
             {[ 
-              { href: "https://github.com/azshaikh0786", icon: Github },
-              { href: "https://www.linkedin.com/in/azeem-shaikh-688a5224b", icon: Linkedin },
-              { href: "mailto:azeem.shaikh@mitaoe.ac.in", icon: Mail },
+              { href: "https://github.com/tanmay482", icon: Github },
+              { href: "https://www.linkedin.com/in/tanmay-mahajan-93a60a258/", icon: Linkedin },
+              { href: "mailto:tanmay.mahajan@mitaoe.ac.in", icon: Mail },
             ].map(({ href, icon: Icon }) => (
               <motion.a
                 key={href}
