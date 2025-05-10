@@ -6,20 +6,30 @@ import Image from "next/image";
 import { useDarkMode } from "../context/DarkModeContext"; // Import the dark mode context
 
 const skills = [
-  { name: "HTML", icon: "/html.png", category: "Frontend" },
-  { name: "CSS", icon: "/css.png", category: "Frontend" },
-  { name: "JavaScript", icon: "/javascript.jpeg", category: "Frontend" },
-  { name: "C++", icon: "/cpp.png", category: "language" },
-  { name: "MongoDB", icon: "/mongodb.png", category: "Database" },
-  { name: "MySQL", icon: "/mysql.png", category: "Database" },
-  { name: "RHL", icon: "/rhl.png", category: "OS" },
-  { name: "Git", icon: "/git.png", category: "Tools" },
-  { name: "GitHub", icon: "/github.png", category: "Tools" },
-  { name: "AWS", icon: "/aws.png", category: "Cloud" },
-  { name: "Docker", icon: "/docker.png", category: "DevOps" },
-  { name: "GCP", icon: "/GCP.png", category: "Cloud" },
-  { name: "Kubernetes", icon: "/kubernetes.png", category: "Cloud" },
+  
+
+  // Mechanical/Design Tools
+  { name: "Fusion 360", icon: "/autodesk-fusion-360-logo-png_seeklogo-482400.png", category: "CAD" },
+  { name: "Creo", icon: "/PTC_Creo_logo.svg.png", category: "CAD" },
+  { name: "CATIA", icon: "/CATIA-Logo.png", category: "CAD" },
+  { name: "AutoCAD", icon: "/AutoCAD-logo.png", category: "CAD" },
+  { name: "CET Commercial Interiors", icon: "/CET_.png", category: "CAD" },
+  { name: "Ansys", icon: "/ANSYS_logo.png", category: "Simulation" },
+
+  // Industry Knowledge
+  { name: "Supply Chain", icon: "/supply4.png", category: "Operations" },
+  { name: "Quality Control", icon: "/pngtree-icon-quality-control.png", category: "Operations" },
+  { name: "Product Lifecycle Management (PLM)", icon: "/plm.png", category: "Project" },
+  { name: "Lean Manufacturing", icon: "/lean manufacture.png", category: "Operations" },
+  { name: "Six Sigma", icon: "/six sigma.png", category: "Operations" },
+
+
+
+  // Soft Skills
+
+  { name: "Time Management", icon: "/tem.png", category: "Soft Skill" },
 ];
+
 
 const Expertise = () => {
   const { darkMode } = useDarkMode(); // Get dark mode state

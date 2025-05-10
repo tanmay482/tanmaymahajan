@@ -85,29 +85,55 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 // Projects Data
 const projects = [
   {
-    title: "Rumor Detection using NLP",
-    description: "Developed an advanced NLP model to detect and categorize rumors, differentiating between genuine information and misleading content.",
-    skills: ["NLP", "Machine Learning"],
-    link: "https://github.com/azshaikh0786/RumourDetection",
-    image: "/",
-    altText: "NLP rumor detection visualization"
+    title: "Folding Cart Design",
+    description: "Designed and fabricated a compact, foldable transportation cart using mild steel and ergonomic components for multipurpose usage like shopping and gardening.",
+    skills: ["Product Design", "Material Selection", "Mechanical Fabrication", "Portability"],
+    image: "/chotucart.png",
+    altText: "Foldable cart prototype for multi-utility transport",
+    link: "https://drive.google.com/file/d/1xl0wz5I6QQyfr_EKIAFYq0wStvvyQmRR/view?usp=sharing"
   },
   {
-    title: "AWS CI/CD Pipeline Deployment",
-    description: "Automated web app deployment with AWS CodePipeline, CodeBuild, and CodeDeploy for efficient software delivery.",
-    skills: ["AWS", "CI/CD", "CodePipeline", "RDS"],
-    link: "https://github.com/azshaikh0786/CICD",
-    image: "/images/cicd-pipeline.jpg",
-    altText: "AWS CI/CD architecture diagram"
+    title: "Autonomous Guided Vehicle (AGV)",
+    description: "Developed a sensor-integrated AGV capable of autonomous navigation and real-time obstacle detection using LiDAR and Raspberry Pi, aligned with Industry 4.0 standards.",
+    skills: ["Raspberry Pi", "LiDAR", "Embedded Systems", "Machine Learning"],
+    image: "/lidar3.png",
+    altText: "AGV navigating warehouse environment",
+    link: "https://drive.google.com/file/d/1Pr6SJgedZlDBzqzkfPiSDhd4srkqw3g9/view?usp=sharing"
   },
   {
-    title: "AWS Cloud Container Deployment",
-    description: "Built and deployed containerized applications using AWS ECR, EKS, and Fargate for scalable infrastructure.",
-    skills: ["AWS", "ECR", "EKS", "Fargate"],
-    image: "/images/container-deployment.jpg",
-    altText: "AWS container infrastructure visualization"
-  }
-];
+    title: "Office HVAC System Design",
+    description: "Engineered an energy-efficient air conditioning system for office spaces using precise heat load calculations and ANSYS Fluent simulations for optimized duct design and thermal control.",
+    skills: ["HVAC", "ANSYS Fluent", "CFD", "Energy Efficiency"],
+    image: "/rac.png",
+    altText: "CFD simulation of office air conditioning layout",
+    link: "https://drive.google.com/file/d/1vrl6jZI1yC6drJAIt1vyWLa3T8-8WfNs/view?usp=sharing"
+  },
+  {
+    title: "Heat Exchanger Baffle Optimization",
+    description: "Analyzed thermal performance of a shell and tube heat exchanger by simulating different baffle plate configurations to find the optimal balance between heat transfer efficiency and pressure drop.",
+    skills: ["Heat Transfer", "ANSYS Simulation", "Thermal Analysis", "CAD Modeling"],
+    image: "/baffle.png",
+    altText: "Simulation of heat exchanger with varied baffle configurations",
+    link: "https://drive.google.com/file/d/1OfrwSIFRQloP4UV0b9ECZgmWVbR68_Uc/view?usp=sharing"
+  },
+  {
+    title: "Development and Characterization of Sustainable Materials for Noise Reduction",
+    description: "Developed eco-friendly composite panels using jute, felt, and wood mixtures with epoxy resin, tested for acoustic efficiency via impedance tube to promote sustainable industrial noise control.",
+    skills: ["Acoustics", "Material Science", "Sustainability", "Experimental Testing"],
+    image: "/capastone.png",
+    altText: "Eco-friendly composite panels for noise reduction",
+    link: "https://drive.google.com/file/d/1FKsKh7UMMeYBMR19_i3uYClHHS7nP208/view?usp=sharing"
+  },
+  {
+  title: "Emojify – Create Your Own Emoji",
+  description: "Built a deep learning-based system to generate personalized emojis from facial expressions or text emotions using CNNs and NLP models, integrating Python, TensorFlow, and OpenCV for a fun and interactive emotion-to-emoji pipeline.",
+  skills: ["Deep Learning", "CNN", "NLP", "TensorFlow", "OpenCV"],
+  image: "/emoji.png",
+  altText: "Emoji generation from facial expression and emotion detection",
+}
+
+]
+;
 
 // Projects Component
 const Projects: React.FC = () => {

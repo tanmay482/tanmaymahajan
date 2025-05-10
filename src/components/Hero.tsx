@@ -18,9 +18,11 @@ const Hero = () => {
   const [activeSkill, setActiveSkill] = useState<number>(0);
 
   const skills: Skill[] = [
-    { icon: <Code className="w-6 h-6" />, text: "Mechanical Engineer" },
+    { icon: <Zap className="w-6 h-6" />, text: "Mechanical Engineer" },
     { icon: <Zap className="w-6 h-6" />, text: "Designer" },
-    { icon: <Zap className="w-6 h-6" />, text: "Competitive Programmer" },
+    { icon: <Zap className="w-6 h-6" />, text: "Innovative" },
+    { icon: <Zap className="w-6 h-6" />, text: "Problem-solver" },
+    { icon: <Zap className="w-6 h-6" />, text: "Technical"  },
   ];
 
   useEffect(() => {
@@ -113,7 +115,7 @@ const Hero = () => {
               darkMode ? 'text-gray-300' : 'text-gray-600'
             }`}
           >
-            I’m a problem solver at heart, blending logic with creativity to build efficient and scalable solutions.I thrive on tackling challenges in the ever-evolving tech landscape. With a passion for innovation and a drive for continuous learning.
+            "As a mechanical engineering student with a strong foundation in core principles and a passion for automation, I am committed to optimizing mechanical systems, enhancing efficiency, and driving innovation through practical, forward-thinking solutions."
           </motion.p>
 
           <div className="flex space-x-4">

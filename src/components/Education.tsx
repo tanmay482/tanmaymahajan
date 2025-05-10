@@ -11,9 +11,9 @@ const Education = () => {
       degree: "B.Tech Mechanical Engineering ",
       institution: "MIT Academy of Engineering",
       period: "2021 - 2025",
-      description: "Focused on cloud computing, software engineering, and web development.",
+      description: "Focused on mechanical design, automation, and system optimization.",
       achievements: [
-        "CGPA: 8.63",
+        "CGPA: 8.36",
       ]
     },
     {
@@ -37,39 +37,39 @@ const Education = () => {
 
   const certifications = [
     {
-      name: "AWS Academy Cloud Foundations",
-      issuer: "Amazon Web Services Training and Certification",
-      badge: "/aws-cloud-foundations.png"
+      name: "Alteryx Foundational Micro",
+      issuer: "Alteryx Foundation",
+      badge: "/alter found.png"
     },
     {
-      name: "AWS Academy Cloud Architecting",
-      issuer: "Amazon Web Services Training and Certification",
-      badge: "/aws-cloud-architect.png"
+      name: "Product Design and Manufacturing ",
+      issuer: "NPTEL",
+      badge: "/nptel 2.png"
     },
     {
-      name: "AWS Academy Data Engineering",
-      issuer: "Amazon Web Services Training and Certification",
-      badge: "/aws-data-engineering.png"
+      name: " Learning Java 11",
+      issuer: "Linkedin Learning",
+      badge: "/java.png"
     },
     {
-      name: "Red Hat Academy - Program Learner",
-      issuer: "Red Hat",
-      badge: "/redhat-academy.png"
+      name: "Barclays LifeSkills Programme ",
+      issuer: "GTT Foundation",
+      badge: "/barclays-logo_brandlogos.net_2xdee-512x512.png"
     },
     {
-      name: "AWS Academy Machine Learning Foundations",
-      issuer: "Amazon Web Services Training and Certification",
-      badge: "/aws-ml-foundations.png"
+      name: "Datathon",
+      issuer: "GirlScript",
+      badge: "/script.jpg"
     },
     {
-      name: "AWS Academy Microservices and CI/CD Pipeline Builder",
-      issuer: "Amazon Web Services Training and Certification",
-      badge: "/aws-microservices.png"
+      name: "Hydraulics Calculoation and Hydraulic Circuit Design",
+      issuer: "Udemy",
+      badge: "/hydro.png"
     },
     {
-      name: "Google Cloud Career Readiness Associate Engineer",
-      issuer: "Google Cloud",
-      badge: "/GCP.png"
+      name: "Alteryx Designer Core",
+      issuer: "Alteryx Foundation",
+      badge: "/de mixro al.png"
     }
   ];
 
